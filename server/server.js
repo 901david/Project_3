@@ -32,7 +32,7 @@ app.use(session({
   resave: true,
   saveUninitialized: true,
 }));
-// const PROD = process.env.NODE_ENV === 'production';
+const PROD = process.env.NODE_ENV === 'production';
 const DEV = process.env.NODE_ENV === 'development';
 mongoose.Promise = require('bluebird');
 
@@ -48,18 +48,24 @@ if (DEV) {
     .catch((err) => {
       console.info('Error connecting to mongo', err);
     });
+} else if (DEV) {
+  mongoose.connect(process.env.MONGODB_URI, options)
+    .then((success) => {
+      console.info('Success connect to mongo', process.env.MONGODB_URI);
+    })
+    .catch((err) => {
+      console.info('Error connecting to mongo', err);
+    });
 }
 
 
+
 app.use(express.static(path.join(__dirname, '../public')));
-// app.use('/favicon.ico', express.static(path.join(__dirname, '../public/favicon.ico')));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'src/views'));
-// app.use();
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use((req, res, next) => {
-  // console.log(' WHAT IS HAPPEINGN IN HERE?????', req.headers);
   res.header('Access-Control-Allow-Origin', req.headers.origin || '*');
   res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,HEAD,DELETE,OPTIONS');
   res.header('Access-Control-Allow-Headers', 'content-Type,x-requested-with');
@@ -72,9 +78,9 @@ app.use(authRouter);
 app.use('/signup', signupRouter);
 app.use('/login', loginRouter);
 app.use('/api/github', githubRouter);
-app.use('/test', (req, res) => {
-  res.send({ Hello: 'uTile is Served' });
-});
+// app.use('/test', (req, res) => {
+//   res.send({ Hello: 'uTile is Served' });
+// });
 
 app.get('*', jwt({ secret: process.env.JWT_SECRET, credentialsRequired: false }), (req, res) => {
   // console.log(' WHAT IS THE MAIN RENDER REQ LOCAL KEYS?', Object.keys(res.locals));
@@ -85,5 +91,5 @@ app.get('*', jwt({ secret: process.env.JWT_SECRET, credentialsRequired: false })
 
 // Serve the files on port 3000.
 app.listen(config.port, () => {
-  console.info('Example app listening on port 3000!!!!!!!!! !\n');
+  console.info('App listening on port 3000!!!!!!!!! !\n');
 });
