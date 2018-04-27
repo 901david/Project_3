@@ -4,6 +4,7 @@
 }
 .card {
   width:70%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   margin-left: 15%;
   margin-right: 15%;
   background-color: lightgray;
@@ -11,12 +12,16 @@
   font-weight: bold;
   text-align: center;
   min-height: 25px;
-  margin-bottom: 8px;
+  margin-bottom: 1%;
   padding:10px;
   border-color: black;
   border-style: solid;
   border-width: 3px;
   border-radius: 8px;
+}
+.refreshArea {
+  display:flex;
+  justify-content: center;
 }
 .commentText {
   font-style: italic;
@@ -33,16 +38,22 @@
   margin-bottom: 10%;
 } */
 .displayMore {
-  border: aqua solid 2px;
+  border: black solid 2px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
   margin-bottom: 100px;
-  margin-left: 31%;
   cursor: pointer;
+  width:15%;
 }
 .loaderContainer {
   min-height:800px;
   background-color: black;
   height:100vh;
   width:100vw;
+}
+.buttonContainer {
+  display:flex;
+  justify-content: center;
 }
 .loaderImage {
 
@@ -62,9 +73,10 @@
     margin: auto;
 }
 .refreshButt {
-  border: black solid 2px;
-  width:50px;
-  margin-top: 5px;
-  margin-left: 48%;
+  border: black solid 2px  ;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+  margin-top: 2%;
+  width:8%;
   cursor: pointer;
 }

@@ -225,7 +225,7 @@ class EventGenerator extends Component {
       const displayMorePlease = () => {
       if (this.state.displayed < 26) {
       return (
-        <div className={`row`}>
+        <div className={`row ${styles.buttonContainer}`}>
           <button className={`${styles.displayMore} btn col-xs-4`} onClick={this.displayMore}> Show More Activity </button>
         </div>
       );
