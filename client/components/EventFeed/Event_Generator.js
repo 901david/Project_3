@@ -213,9 +213,9 @@ class EventGenerator extends Component {
       default:
         return (
           <div>
-            <Card className={styles.card}>
+            {/* <Card className={styles.card}>
               I am sorry, this event type is not yet supported.
-            </Card>
+            </Card> */}
           </div>
         );
     }
@@ -232,7 +232,7 @@ class EventGenerator extends Component {
     }
   }
     return (
-      <div className='event-feed'>
+      <div className={`event-feed ${this.state.displayed > 25 ? styles.noButton : ''}`}>
         <h1 className={styles.headerText}>Your Recent Events:</h1>
         {this.props.eventData.map((event, i) => {
           if (i <= this.state.displayed) {
