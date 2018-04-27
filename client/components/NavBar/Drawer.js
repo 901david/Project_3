@@ -55,7 +55,7 @@ class RepoDrawer extends Component {
   }
   render() {
     // console.log('current repo number', this.state.currentRepo);
-    
+
     const { repos } = this.state;
     const backArrow = () => (
       <div>
@@ -70,7 +70,7 @@ class RepoDrawer extends Component {
     return (
       <div className={specialClass}>
         <Button className={styles.repoButton} label="Repos" onClick={this.handleToggle} />
-        <Drawer openSecondary={true} active={this.state.active} onOverlayClick={this.handleToggle} >
+        <Drawer type='right' active={this.state.active} onOverlayClick={this.handleToggle} >
           <div className={styles.pageButtons} style={{marginTop: '25%'}}>
             <Button
               className={styles.button}
