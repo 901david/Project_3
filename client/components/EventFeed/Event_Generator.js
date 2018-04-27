@@ -226,13 +226,13 @@ class EventGenerator extends Component {
       if (this.state.displayed < 26) {
       return (
         <div className={`row`}>
-          <button className={`${styles.displayMore} btn col-xs-4`} onClick={this.displayMore}> Click for More </button>
+          <button className={`${styles.displayMore} btn col-xs-4`} onClick={this.displayMore}> Show More Activity </button>
         </div>
       );
     }
   }
     return (
-      <div>
+      <div className='event-feed'>
         <h1 className={styles.headerText}>Your Recent Events:</h1>
         {this.props.eventData.map((event, i) => {
           if (i <= this.state.displayed) {

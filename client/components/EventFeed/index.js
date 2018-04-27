@@ -35,7 +35,9 @@ class EventFeed extends Component {
       return (
         <div className={styles.eventBuffer}>
           <div className='row'>
-            <button className={`${styles.refreshButt} btn`} onClick={()=>this.props.fetchUserEvents(this.props.git_profile.login, this.props.git_token)}><i className="material-icons pull-right" style={{color: 'black'}}>refresh</i></button>
+            <div className='refresh-area'>
+            <button className={`${styles.refreshButt} btn`} onClick={()=> this.props.fetchUserEvents(this.props.git_profile.login, this.props.git_token)}><i className="material-icons" style={{ color: 'black' }}>refresh</i>Retrieve New Events</button>
+          </div>
           </div>
           <EventGenerator eventData={this.state.events} />
         </div>

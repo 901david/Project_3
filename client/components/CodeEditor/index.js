@@ -13,7 +13,7 @@ whatIsOurState(propVal) {
 }
 render() {
   return (
-    <div>
+    <div  style={{marginTop: '3%'}}>
     <LanguageDropdown handleParentStateChange={this.whatIsOurState.bind(this)} />
     <EditorField currentLanguageState={this.state.currentLanguage} />
     </div>

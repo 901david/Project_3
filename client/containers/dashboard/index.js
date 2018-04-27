@@ -3,7 +3,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 import EventFeed from '../../components/EventFeed';
 import ModalGitAuth from '../../components/Modal';
 import { fetchGitProfile } from '../../actions/githubActions/fetchProfile';
@@ -12,14 +11,13 @@ class Dashboard extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: 'Fuck yea!!!',
+      data: 'yea!!!',
       active: false,
       github_authorized: false,
     };
     this.handleToggle = this.handleToggle.bind(this);
   }
   componentDidMount() {
-    console.log('mounted');
     if (this.props.gitAuth.githubAuthentication) {
       if (!this.props.gitAuth.git_profile) {
         this.props.fetchGitProfile(this.props.gitAuth.github_token);
@@ -56,10 +54,10 @@ class Dashboard extends Component {
 
       <div
         className="container-fluid"
-        style={{ backgroundColor: 'black' }}
+        style={{ backgroundColor: 'white' }}
       >
 
-        <div className="col-lg-12">
+        <div className="col-lg-12" style={{ backgroundColor: 'white' }}>
           <EventFeed />
         </div>
       </div>
