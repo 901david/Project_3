@@ -23,9 +23,7 @@ class RepoDrawer extends Component {
       const { login } = this.props.git_profile;
       this.props.fetchUserRepos(login, this.props.git_token, this.state.currentRepo);
     }
-    console.log('SEETTTTTTTTTTTTING LAAAAAASTT NUMMBERRRERER');
     this.setState({ lastRepoNumber: this.props.lastRepoNum });
-    // console.log(' WHAT IS OUR LOGIN AND TOKEN ON MOUNT OF DRAWER???', this.props.git_profile, this.props.git_token);
   }
   componentWillReceiveProps(nextProps) {
     if (nextProps.git_profile.login && (nextProps.git_profile.login !== this.props.git_profile.login)) {
@@ -57,8 +55,7 @@ class RepoDrawer extends Component {
   }
   render() {
     // console.log('current repo number', this.state.currentRepo);
-    console.log('last number on Props', this.props.lastRepoNum);
-    console.log('lastRepoNumber on State', this.state.lastRepoNumber);
+    
     const { repos } = this.state;
     const backArrow = () => (
       <div>
@@ -73,7 +70,7 @@ class RepoDrawer extends Component {
     return (
       <div className={specialClass}>
         <Button className={styles.repoButton} label="Repos" onClick={this.handleToggle} />
-        <Drawer active={this.state.active} onOverlayClick={this.handleToggle}>
+        <Drawer openSecondary={true} active={this.state.active} onOverlayClick={this.handleToggle} >
           <div className={styles.pageButtons} style={{marginTop: '25%'}}>
             <Button
               className={styles.button}

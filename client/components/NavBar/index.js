@@ -35,6 +35,13 @@ class PrivateNavBar extends Component {
     this.setState({ active: !this.state.active });
   }
   render() {
+    const currentUrl = document.URL;
+    let specialClass = `${styles.hide}`;;
+    let projectClass = `${styles.show}`;
+    if (currentUrl.split('/').indexOf('dashboard') === -1) {
+      specialClass = `${styles.show}`;
+      projectClass = `${styles.hide}`;
+    }
     return (
       <AppBar
         leftIcon={<GithubIcon />}
@@ -43,8 +50,8 @@ class PrivateNavBar extends Component {
         }}>
         <h4>uTile</h4>
         <Navigation className={styles.navMargin} type="horizontal">
-          <NavLink to="/dashboard" activeClassName="selected" label="dashboard" icon="dashboard" style={{color: "white", margin: "15px"}}>dashboard</NavLink>
-          <NavLink to="/projects" label="projects" icon="person" style={{color: "white", margin: "15px"}}>projects</NavLink>
+          <NavLink className={specialClass} to="/dashboard" activeClassName="selected" label="dashboard" icon="dashboard" style={{color: "white", margin: "15px"}}>Dashboard</NavLink>
+          <NavLink className={projectClass} to="/projects" label="projects" icon="person" style={{color: "white", margin: "15px"}}>Projects</NavLink>
         </Navigation>
         <RepoDrawer style={{
           float: "left",
