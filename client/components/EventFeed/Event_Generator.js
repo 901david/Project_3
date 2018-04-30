@@ -233,7 +233,9 @@ class EventGenerator extends Component {
   }
     return (
       <div className={`event-feed ${this.state.displayed > 25 ? styles.noButton : ''}`}>
+        <div className={styles.recentEvents}>
         <h1 className={styles.headerText}>Your Recent Events:</h1>
+      </div>
         {this.props.eventData.map((event, i) => {
           if (i <= this.state.displayed) {
             return (

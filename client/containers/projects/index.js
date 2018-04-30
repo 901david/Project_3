@@ -39,15 +39,15 @@ class Projects extends Component {
       return false;
     }
     render() {
-      // console.log('Current screen from container', this.state.currentScreen);
       const { currentProject } = this.state;
       if (currentProject !== null) {
         return (
           <div style={{backgroundColor: 'white'}}>
-            <div>
-              <h4 style={{backgroundColor: 'white'}}>Current Repository: {currentProject.name}</h4>
-              <CollaboratorsBar repoName={currentProject.name} currentUser={currentProject.owner.login} />
+            <div className={styles.collab}>
+              <h2>Current Repository: {currentProject.name}</h2>
+
             </div>
+              <CollaboratorsBar repoName={currentProject.name} currentUser={currentProject.owner.login} />
             <div className={styles.buttonBox}>
               <ButtonBar clicker={this.whatStateToChange.bind(this)} />
             </div>

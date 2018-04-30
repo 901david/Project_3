@@ -5,7 +5,8 @@ import styles from './collab.css';
 
 const ChipCard = (props) => (
   <div className={styles.container}>
-    <h3 className={styles.title}>Collaborators:</h3>
+      <div className={styles.collabContain}>
+          <h3 className={styles.title}>Collaborators:</h3>
     {props.collabs.map((collab)=>{
       return (
         <div key={collab.id} className={styles.child}>
@@ -16,7 +17,7 @@ const ChipCard = (props) => (
         </div>
       );
     })}
-
+      </div>
   </div>
 );
 

@@ -1,13 +1,15 @@
-.background {
-  background-color: white;
-}
+
 .container {
-  display:flex;
-  flex-wrap: wrap;
+  width:100%;
   background-color: lightgray;
+    display:flex;
+    justify-content: center;
+}
+.collabContain {
+    display:inline-flex;
 }
 .child {
-  margin:15px auto auto auto;
+  margin: 0 1% 0 1%;
 }
 
 a:link {
@@ -28,7 +30,4 @@ a:hover {
 a:active {
     color: purple;
 }
-.title {
-  text-align: center;
-  margin-left: 2%;
-}
+

@@ -8,6 +8,12 @@
   margin-left: 2%;
   margin-right: 2%;
 }
+.collab {
+  display:flex;
+  justify-content: center;
+  background:lightgray;
+}
+
 .loaderContainerTwo {
   min-height:800px;
   background-color: white;

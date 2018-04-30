@@ -17,13 +17,10 @@ class Collaborators extends Component {
     };
   }
   componentDidMount() {
-    // console.log('Collabs just mounted', this.props.currentUser, this.props.repoName, this.props.git_token);
     this.props.fetchCollaborators(this.props.currentUser, this.props.repoName, this.props.git_token);
   }
   componentWillReceiveProps(nextProps) {
-    // console.info(' WHAT ARE THE NEXT PROPS,', nextProps.userRepos);
     const { collabs, repoName, currentUser } = nextProps;
-    // console.log(' WHAT IS USER REPOS', userRepos);
     if (collabs.length !== 0) {
       this.setState({ collabs, repoName, currentUser });
     }
@@ -34,7 +31,6 @@ class Collaborators extends Component {
     }
   }
   render() {
-    // console.log('Here is my collab state', this.state);
     return (
       <div>
         <Chip collabs={this.state.collabs} />

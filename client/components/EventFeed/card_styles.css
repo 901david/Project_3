@@ -27,16 +27,14 @@
   font-style: italic;
 }
 .headerText {
-  width:70%;
-  margin-left: 15%;
-  margin-right: 15%;
-  color: White;
-  margin-bottom: 10px;
-  text-align: center;
+  margin-top: 3%;
+  color: black;
+  margin-bottom: 1%;
 }
-/* .eventBuffer {
-  margin-bottom: 10%;
-} */
+.recentEvents {
+  display: flex;
+  justify-content: center;
+}
 .displayMore {
   border: black solid 2px;
   background:lightgray;
