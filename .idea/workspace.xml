@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fa5b9fc-f272-4aa2-82d4-8aa245d98f46" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/components/CodeEditor/code_editor.css" />
       <change beforePath="$PROJECT_DIR$/--syslog" afterPath="$PROJECT_DIR$/--syslog" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/client/components/CodeEditor/Language_Dropdown.js" afterPath="$PROJECT_DIR$/client/components/CodeEditor/Language_Dropdown.js" />
-      <change beforePath="$PROJECT_DIR$/client/components/CodeEditor/index.js" afterPath="$PROJECT_DIR$/client/components/CodeEditor/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/components/EventFeed/index.js" afterPath="$PROJECT_DIR$/client/components/EventFeed/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/components/Matrix/Matrix.js" afterPath="$PROJECT_DIR$/client/components/Matrix/Matrix.js" />
-      <change beforePath="$PROJECT_DIR$/client/components/Matrix/matrix.css" afterPath="$PROJECT_DIR$/client/components/Matrix/matrix.css" />
+      <change beforePath="$PROJECT_DIR$/client/reducers/github/issues_reducer.js" afterPath="$PROJECT_DIR$/client/reducers/github/issues_reducer.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,24 +18,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Matrix.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/components/Matrix/Matrix.js">
+      <file leaf-file-name="issues_reducer.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/reducers/github/issues_reducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="350">
+              <caret line="64" column="64" lean-forward="false" selection-start-line="64" selection-start-column="64" selection-end-line="64" selection-end-column="64" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#126#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="matrix.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/components/Matrix/matrix.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -69,6 +54,7 @@
         <option value="$PROJECT_DIR$/client/components/CodeEditor/index.js" />
         <option value="$PROJECT_DIR$/client/components/Matrix/matrix.css" />
         <option value="$PROJECT_DIR$/client/components/Matrix/Matrix.js" />
+        <option value="$PROJECT_DIR$/client/reducers/github/issues_reducer.js" />
       </list>
     </option>
   </component>
@@ -137,8 +123,14 @@
               <item name="Project_3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project_3" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Matrix" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project_3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project_3" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -183,12 +175,12 @@
       <updated>1524931486312</updated>
       <workItem from="1524931488277" duration="934000" />
       <workItem from="1525056453229" duration="51000" />
-      <workItem from="1525056509211" duration="6536000" />
+      <workItem from="1525056509211" duration="6832000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7521000" />
+    <option name="totallyTimeSpent" value="7817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -442,7 +434,17 @@
         <state relative-caret-position="88">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/reducers/github/issues_reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="64" column="64" lean-forward="false" selection-start-line="64" selection-start-column="64" selection-end-line="64" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#126#0" expanded="true" />
           </folding>
         </state>
       </provider>
