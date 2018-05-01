@@ -1,16 +1,7 @@
 import React, { Component } from 'react';
-import { Button } from 'react-toolbox/lib/button';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+
 
 class AltFooter extends Component {
-  constructor() {
-    super();
-    this.state = {
-    };
-
-  }
-
 
   render() {
     const styles = {
@@ -28,7 +19,7 @@ class AltFooter extends Component {
 
     return (
       <div style={styles.basic}>
-          <p>&#9400;Copyright 2017 uTile</p>
+          <p>&#9400;Copyright 2018 uTile</p>
       </div>
     );
   }
