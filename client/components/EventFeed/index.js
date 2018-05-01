@@ -13,7 +13,6 @@ class EventFeed extends Component {
   }
   componentDidMount() {
     if (this.props.git_profile.login) {
-      // console.log(' WE SHOULD BE FETCHING THE EVENT FEED!!!!!', this.props.git_profile);
       this.props.fetchUserEvents(this.props.git_profile.login, this.props.git_token);
 
     }
@@ -21,7 +20,6 @@ class EventFeed extends Component {
   componentWillReceiveProps(nextProps) {
     if (nextProps.git_profile.login && nextProps.git_profile.login !== this.props.git_profile.login) {
       const { login } = nextProps.git_profile;
-      // console.log(login);
       this.props.fetchUserEvents(login, nextProps.git_token);
 
     }
@@ -36,7 +34,7 @@ class EventFeed extends Component {
         <div>
           <div>
             <div className={styles.refreshArea}>
-              <button className={`${styles.refreshButt} btn`} onClick={()=> this.props.fetchUserEvents(this.props.git_profile.login, this.props.git_token)}><i className="material-icons" style={{ color: 'black', marginTop: '1%' }}>refresh</i><span style={{lineHeight: '43px'}}>Retrieve New Events</span></button>
+              <button className={`${styles.refreshButt} btn`} onClick={()=> this.props.fetchUserEvents(this.props.git_profile.login, this.props.git_token)}><span style={{lineHeight: '43px'}}>Retrieve New Events</span></button>
           </div>
           </div>
           <EventGenerator eventData={this.state.events} />

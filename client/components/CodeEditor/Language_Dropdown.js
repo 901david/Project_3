@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Dropdown from 'react-toolbox/lib/dropdown';
+import styles from './code_editor.css';
 
 const languages = [
   { value: 'css', label: 'CSS' },
@@ -32,13 +33,16 @@ class LanguageDropdown extends Component {
   };
   render() {
     return (
+        <div className={styles.languageContainer}>
       <Dropdown
         auto
+        className={styles.dropdownLanguage}
         label={`Choose Your Language Below`}
         onChange={this.handleChange}
         source={languages}
         value={this.state.value}
       />
+        </div>
     );
   }
 }

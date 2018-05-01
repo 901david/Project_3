@@ -14731,3 +14731,211 @@
 2018-05-01T15:25:38.710-0600 D INDEX    [TTLMonitor] deleted: 0
 2018-05-01T15:25:40.889-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
 2018-05-01T15:25:45.898-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:25:50.906-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:25:55.925-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:26:00.929-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:26:05.938-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:26:10.947-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:26:15.954-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:26:20.956-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:26:25.958-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:26:30.965-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:26:35.968-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:26:38.714-0600 D INDEX    [TTLMonitor] ns: uTile.sessions key: { expires: 1 } name: expires_1
+2018-05-01T15:26:38.714-0600 D INDEX    [TTLMonitor] deleted: 0
+2018-05-01T15:26:40.970-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:26:45.974-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:26:50.976-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:26:55.987-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:27:00.988-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:27:05.989-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:27:10.999-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:27:16.006-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:27:21.011-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:27:26.015-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:27:31.016-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:27:36.018-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:27:38.715-0600 D INDEX    [TTLMonitor] ns: uTile.sessions key: { expires: 1 } name: expires_1
+2018-05-01T15:27:38.715-0600 D INDEX    [TTLMonitor] deleted: 0
+2018-05-01T15:27:41.024-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:27:46.033-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:27:51.037-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:27:56.043-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:28:01.048-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:28:06.054-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:28:11.062-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:28:16.066-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:28:21.070-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:28:26.085-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:28:31.092-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:28:36.100-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:28:38.718-0600 D INDEX    [TTLMonitor] ns: uTile.sessions key: { expires: 1 } name: expires_1
+2018-05-01T15:28:38.718-0600 D INDEX    [TTLMonitor] deleted: 0
+2018-05-01T15:28:41.104-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:28:46.107-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:28:51.118-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:28:56.123-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:29:01.132-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:29:06.136-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:29:11.138-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:29:16.144-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:29:21.145-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:29:26.161-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:29:31.167-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:29:36.176-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:29:38.727-0600 D INDEX    [TTLMonitor] ns: uTile.sessions key: { expires: 1 } name: expires_1
+2018-05-01T15:29:38.727-0600 D INDEX    [TTLMonitor] deleted: 0
+2018-05-01T15:29:41.184-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:29:46.186-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:29:51.186-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:29:56.191-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:30:01.198-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:30:06.200-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:30:11.209-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:30:16.219-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:30:21.223-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:30:26.224-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:30:31.232-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:30:36.237-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:30:38.731-0600 D INDEX    [TTLMonitor] ns: uTile.sessions key: { expires: 1 } name: expires_1
+2018-05-01T15:30:38.731-0600 D INDEX    [TTLMonitor] deleted: 0
+2018-05-01T15:30:41.248-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:30:46.256-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:30:51.262-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:30:56.275-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:31:01.285-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:31:06.287-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:31:11.291-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:31:16.294-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:31:21.303-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:31:26.305-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:31:31.306-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:31:36.310-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:31:38.733-0600 D INDEX    [TTLMonitor] ns: uTile.sessions key: { expires: 1 } name: expires_1
+2018-05-01T15:31:38.733-0600 D INDEX    [TTLMonitor] deleted: 0
+2018-05-01T15:31:41.313-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:31:46.321-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:31:51.321-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:31:56.330-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:32:01.333-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:32:06.342-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:32:11.343-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:32:16.347-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:32:21.353-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:32:26.355-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:32:31.365-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:32:36.377-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:32:38.736-0600 D INDEX    [TTLMonitor] ns: uTile.sessions key: { expires: 1 } name: expires_1
+2018-05-01T15:32:38.736-0600 D INDEX    [TTLMonitor] deleted: 0
+2018-05-01T15:32:41.386-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:32:46.393-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:32:51.402-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:32:56.405-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:33:01.409-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:33:06.417-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:33:11.429-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:33:16.440-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:33:21.442-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:33:26.448-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:33:31.459-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:33:36.467-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:33:38.737-0600 D INDEX    [TTLMonitor] ns: uTile.sessions key: { expires: 1 } name: expires_1
+2018-05-01T15:33:38.737-0600 D INDEX    [TTLMonitor] deleted: 0
+2018-05-01T15:33:41.470-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:33:46.472-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:33:51.480-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:33:56.489-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:34:01.498-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:34:06.498-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:34:11.506-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:34:16.514-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:34:21.524-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:34:26.534-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:34:31.550-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:34:36.552-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:34:38.742-0600 D INDEX    [TTLMonitor] ns: uTile.sessions key: { expires: 1 } name: expires_1
+2018-05-01T15:34:38.742-0600 D INDEX    [TTLMonitor] deleted: 0
+2018-05-01T15:34:41.573-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:34:46.578-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:34:51.586-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:34:56.591-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:35:01.597-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:35:06.600-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:35:11.604-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:35:16.605-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:35:21.613-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:35:26.615-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:35:31.619-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:35:36.629-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:35:38.744-0600 D INDEX    [TTLMonitor] ns: uTile.sessions key: { expires: 1 } name: expires_1
+2018-05-01T15:35:38.744-0600 D INDEX    [TTLMonitor] deleted: 0
+2018-05-01T15:35:41.629-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:35:46.634-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:35:51.641-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:35:56.643-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:36:01.653-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:36:06.654-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:36:11.662-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:36:16.668-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:36:21.674-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:36:26.684-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:36:31.686-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:36:36.698-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:36:38.746-0600 D INDEX    [TTLMonitor] ns: uTile.sessions key: { expires: 1 } name: expires_1
+2018-05-01T15:36:38.747-0600 D INDEX    [TTLMonitor] deleted: 0
+2018-05-01T15:36:41.699-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:36:46.700-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:36:51.706-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:36:56.711-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:37:01.716-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:37:06.720-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:37:11.724-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:37:16.730-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:37:21.737-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:37:26.738-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:37:31.748-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:37:36.748-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:37:38.754-0600 D INDEX    [TTLMonitor] ns: uTile.sessions key: { expires: 1 } name: expires_1
+2018-05-01T15:37:38.754-0600 D INDEX    [TTLMonitor] deleted: 0
+2018-05-01T15:37:41.750-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:37:46.754-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:37:51.755-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:37:56.764-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:38:01.771-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:38:06.779-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:38:11.783-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:38:16.788-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:38:21.795-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:38:26.796-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:38:31.805-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:38:36.811-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:38:38.761-0600 D INDEX    [TTLMonitor] ns: uTile.sessions key: { expires: 1 } name: expires_1
+2018-05-01T15:38:38.761-0600 D INDEX    [TTLMonitor] deleted: 0
+2018-05-01T15:38:41.813-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:38:46.817-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:38:51.828-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:38:56.830-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:39:01.831-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:39:06.842-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:39:11.842-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:39:16.847-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:39:21.856-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:39:26.861-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:39:31.863-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:39:36.867-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:39:38.764-0600 D INDEX    [TTLMonitor] ns: uTile.sessions key: { expires: 1 } name: expires_1
+2018-05-01T15:39:38.765-0600 D INDEX    [TTLMonitor] deleted: 0
+2018-05-01T15:39:41.876-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:39:46.883-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:39:51.891-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:39:56.902-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:40:01.904-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:40:06.906-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:40:11.908-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:40:16.913-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:40:21.916-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:40:26.924-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:40:31.927-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:40:36.933-0600 I COMMAND  [conn1] command admin.$cmd command: isMaster { ismaster: true } numYields:0 reslen:189 locks:{} protocol:op_query 0ms
+2018-05-01T15:40:38.772-0600 D INDEX    [TTLMonitor] ns: uTile.sessions key: { expires: 1 } name: expires_1
+2018-05-01T15:40:38.772-0600 D INDEX    [TTLMonitor] deleted: 0

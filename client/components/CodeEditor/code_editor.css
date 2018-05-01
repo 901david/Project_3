@@ -1,0 +1,9 @@
+.dropdownLanguage {
+    border:3px solid rgba(0, 0, 0, 0.5);
+    width:25%;
+    margin-bottom: 2%;
+}
+.languageContainer {
+    display:flex;
+    justify-content: center;
+}

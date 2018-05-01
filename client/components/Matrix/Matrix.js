@@ -7,7 +7,7 @@ class Matrix extends Component {
   state = {}
   render() {
     return (
-      <div>
+      <div className={styles.containerPadding}>
         <Quadrants />
       </div>
     );
