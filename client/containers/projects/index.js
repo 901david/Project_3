@@ -15,13 +15,10 @@ class Projects extends Component {
       currentScreen: 'readmeButt',
     };
     componentDidMount() {
-      // console.log(' DO WE HAVE A CURRENT PROJECT?', this.props.currentProject);
       this.setState({ currentProject: this.props.currentProject });
     }
     componentWillReceiveProps(nextProps) {
-      // console.log("this should show projects connected in state", nextProps.currentProject);
       const { currentProject } = nextProps;
-      console.log('Current proj in nextprops', currentProject);
       if (currentProject.id !== this.props.currentProject.id) {
         this.setState({ currentProject });
       }
@@ -49,7 +46,7 @@ class Projects extends Component {
             </div>
               <CollaboratorsBar repoName={currentProject.name} currentUser={currentProject.owner.login} />
             <div className={styles.buttonBox}>
-              <ButtonBar clicker={this.whatStateToChange.bind(this)} />
+              <ButtonBar currentScreen={this.state.currentScreen} clicker={this.whatStateToChange.bind(this)} />
             </div>
             <div>
               <ProjLayout currentScreen={this.state.currentScreen}  repoName={currentProject.name} currentRepoOwner={currentProject.owner.login} />

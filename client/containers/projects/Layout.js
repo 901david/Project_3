@@ -8,7 +8,7 @@ import { fetchUserIssues } from '../../actions/githubActions/getIssuesAction';
 import { fetchUserReadme } from '../../actions/githubActions/getReadmeAction';
 import Matrix from '../../components/Matrix/Matrix';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import { Card, CardActions, CardHeader, CardTitle, CardText } from 'material-ui/Card';
+import { Card, CardActions } from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import { createUserIssue } from '../../actions/githubActions/createIssueAction';
 import { getRepoBranches } from '../../actions/githubActions/getBranchesAction';
@@ -160,8 +160,6 @@ class ProjLayout extends Component {
     }
   }
   render() {
-    // console.log('Here re my branches?????', this.state.branches);
-    console.log('are my expanded cards actually working', this.state.expandedCards);
     return (
       <div className={styles.layout}>
         {this.whatStateToUse(this.props.currentScreen)}

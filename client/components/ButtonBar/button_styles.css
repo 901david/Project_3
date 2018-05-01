@@ -2,7 +2,11 @@
   width:20%;
   margin:2.5%;
   background-color: white;
+  border:3px solid transparent;
+  box-shadow: 3px 3px rgba(0,0,0, 0.3);
 }
-.buttonChoice:hover {
-  background-color: red;
+.selected {
+  background: darkslateblue;
+  border: 3px solid black;
 }
+
