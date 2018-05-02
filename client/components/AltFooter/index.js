@@ -7,7 +7,7 @@ class AltFooter extends Component {
     const styles = {
       basic: {
         width: '100vw',
-        background: '#545454',
+        background: 'black',
         height: '50px',
         bottom: '0',
         position: 'fixed',

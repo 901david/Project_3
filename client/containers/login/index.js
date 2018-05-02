@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
 import LoginForm from '../../components/LoginForm';
 import styles from '../../components/LoginForm/LoginForm.css';
 import PropTypes from 'prop-types';
-
-// import image from '../../assets/utile.png'
 import { logUserIn } from '../../actions/loginActions';
 
 class Login extends Component {
@@ -35,8 +32,10 @@ class Login extends Component {
     const { email, password } = this.state;
     return (
 
-      <div className={`container-fluid ${styles.backFix}`}>
+      <div className={`${styles.backFix}`}>
+        <div className={`col-xs-12 ${styles.imageBackground}`}>
           <img className={styles.logo} src="./images/utile.gif" alt="our logo" />
+        </div>
         <div className="row">
           <div className={`col-lg-6 col-md-6 col-sm-6 col-xs-12 ${styles.formFix}`}>
 

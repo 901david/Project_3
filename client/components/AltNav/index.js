@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import AppBar from 'react-toolbox/lib/app_bar';
-import Navigation from 'react-toolbox/lib/navigation';
 import { NavLink } from 'react-router-dom';
-import { IconButton } from 'react-toolbox/lib/button';
-import {IconMenu, MenuItem, MenuDivider } from 'react-toolbox/lib/menu';
 import styles from './AltNav.css';
 
 class AltNavBar extends Component {

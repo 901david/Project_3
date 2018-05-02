@@ -1,6 +1,6 @@
 .form {
 
-  background-color: #59ffd8;
+  background-color: lightgray;
   border-radius: 20px;
   padding: 15px;
 
@@ -16,13 +16,18 @@
   margin-top: 15px;
   margin: auto;
 }
+.imageBackground {
+  background:black;
+}
 .logo {
   margin-left: 25%;
+
 }
 .formFix {
   margin-left: 23%;
+  margin-top:5%
 }
 .backFix {
-  height:750px;
-  background: black;
+  height:100vh;
+  background: white;
 }

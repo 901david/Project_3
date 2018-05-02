@@ -5,7 +5,18 @@ margin-left: auto;
 margin-right: auto;
 width: 60%;
 }
-
+.parent {
+    display:flex;
+    justify-content: center;
+}
+.textBackground {
+    background:black;
+    margin-top: 10%;
+    padding:3%;
+}
+.pushDown {
+    marign-top:5%;
+}
 .title {
   color: lightgray;
   text-align: center;

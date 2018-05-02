@@ -35,24 +35,29 @@ class Signup extends Component {
   render() {
     const userState = this.state;
     return (
-      <div className="container-fluid" style={{backgroundColor: "black", height:750}}>
-        <div className="row">
+      <div className={`container-fluid`} style={{backgroundColor: "white", height:750}}>
+        <div style={{marginLeft: '35%'}}>
+            <div className={`row`}>
+                <div className={`col-lg-6 col-md-6 col-sm-12 col-xs-12`}>
+                    <SignupForm
+                        userInfo={userState}
+                        handleChange={this.handleChange}
+                        handleSignup={this.handleSignup}
+                    />
+                </div>
+            </div>
+        <div className={`row`}>
 
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div className={`col-lg-6 col-md-6 col-sm-12 col-xs-12`}>
+            <div className={styles.textBackground}>
             <img src='./images/utile.gif' className={styles.logo} />
             <h4 className={styles.title}> Your new coding bootcamp best friend. </h4>
             <h5 className={styles.text}> Bootcamps can be overwhelming. With a little help from the uTile platform
             you can stay organized, learn workflow and manage all of your tasks and projects
           in one place. With GitHub integration, your code imagination truly has no limits.  </h5>
+            </div>
           </div>
-
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 pull-right">
-            <SignupForm
-              userInfo={userState}
-              handleChange={this.handleChange}
-              handleSignup={this.handleSignup}
-            />
-          </div>
+        </div>
         </div>
       </div>
     );
