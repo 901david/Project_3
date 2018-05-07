@@ -31,6 +31,7 @@ class LanguageDropdown extends Component {
     this.setState({ value });
     this.props.handleParentStateChange(value);
   };
+
   render() {
     return (
         <div className={styles.languageContainer}>

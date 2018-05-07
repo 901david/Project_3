@@ -297,7 +297,7 @@ githubRouter.post('/readme', (req, res) => {
   }, (err, response, body) => {
     // console.log('WTF IS MY README BODY', body);
     if (body.message === 'Not Found') {
-      return res.status(500).json({ readme: 'Unfortunately, there is no read me :(', err: null });
+      return res.status(500).json({ readme: 'Unfortunately, there is currently no read me created.  Get started by creating one on GitHub', err: null });
     }
     if (!err) {
       const b64string = body.content;

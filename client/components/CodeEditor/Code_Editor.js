@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MonacoEditor from 'react-monaco-editor';
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 class CodeEditor extends Component {
   constructor(props) {
@@ -15,7 +16,6 @@ editorDidMount(editor, monaco) {
   editor.focus();
 }
 onChange(newValue, e) {
-  // console.log('onChange', newValue, e);
   function localStore (state) {
     localStorage.setItem('CodeEditorPreviousState', JSON.stringify(state));
 
@@ -33,10 +33,15 @@ render() {
   const options = {
     selectOnLineNumbers: true
   };
-  // console.log(this.props.currentLanguageState, 'should be language');
-  // console.log(this.state.code, 'here is my code state');
+
   return (
-    <div>
+    <div id='editor-text'>
+        <div className='row'>
+        <CopyToClipboard text={this.state.code}>
+            <i className="fa fa-clipboard fa-3x" aria-hidden="true"></i>
+        </CopyToClipboard>
+        </div>
+        <div className='row'>
       <MonacoEditor
         width="100%"
         height="600"
@@ -48,6 +53,7 @@ render() {
         editorDidMount={::this.editorDidMount}
         requireConfig={requireConfig}
       />
+        </div>
     </div>
   );
 }

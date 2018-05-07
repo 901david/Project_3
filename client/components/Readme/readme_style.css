@@ -10,3 +10,10 @@
   width:50%;
   height: auto;
 }
+.noReadMe {
+  display: flex;
+  justify-content: center;
+}
+h3 {
+  margin-top: 5%;
+}
