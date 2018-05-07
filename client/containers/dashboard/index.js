@@ -42,7 +42,7 @@ class Dashboard extends Component {
     const { github_authorized } = this.state;
     if (!github_authorized) {
       return (
-        <div className="col-lg-12">
+        <div>
           <ModalGitAuth
             authorized={this.state.github_authorized}
             authorizeMe={this.handleGithubAuth}
@@ -52,15 +52,10 @@ class Dashboard extends Component {
     }
     return (
 
-      <div
-        className="container-fluid"
-        style={{ backgroundColor: 'white' }}
-      >
 
-        <div className="col-lg-12" style={{ backgroundColor: 'white' }}>
+        <div style={{ backgroundColor: 'white' }}>
           <EventFeed />
         </div>
-      </div>
     );
   }
 }

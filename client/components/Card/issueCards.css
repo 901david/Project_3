@@ -1,5 +1,5 @@
 .mainCont {
-  margin-top: 3%;  
+  margin-top: 3%;
   display:flex;
   flex-wrap:wrap;
   /*justify-content: space-evenly;*/
@@ -53,12 +53,13 @@
   background-color: lightgray;
 }
 .loaderContainerThree {
-  min-height:800px;
+  width:100vw;
+  height:100vh;
   background-color: black;
 }
 .loaderImageThree {
   position: absolute;
-    top:0;
+    top:25%;
     bottom: 0;
     left: 0;
     right: 0;

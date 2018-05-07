@@ -48,7 +48,6 @@
   padding-bottom: 7%;
 }
 .loaderContainer {
-  min-height:800px;
   background-color: black;
   height:100vh;
   width:100vw;

@@ -23,96 +23,98 @@ class IssueCard extends Component {
     currentIssueNumber: '',
     currentModalState: '',
     assigneeData: null,
-  }
+      noIssues: false,
+  };
+
   componentDidMount() {
-    // console.log('INTIAL COMMENTS DATA TO SEND OFF ', this.props.repoOwner, this.props.repoName);
-    this.props.issues.map((issue) => {
-      this.props.fetchUserComments(this.props.repoOwner, this.props.repoName, issue.number, this.props.git_token);
-    });
+      this.props.handleRefresh();
+      if(!this.state.issues) {
+      const currentState = this.state;
+      this.setState({ ...currentState, issuesLoaded: true, commentsLoaded: true, assigneesLoaded: true, noIssues: true });
+    }
+    else {
+        this.props.issues.map((issue) => {
+            this.props.fetchUserComments(this.props.repoOwner, this.props.repoName, issue.number, this.props.git_token);
+        });
+    }
+
   }
   componentWillReceiveProps(nextProps) {
-    // console.log(' WHEN DO WE GET NEW ISSUES?', nextProps.issueComments);
-    // console.log("this should show projects connected in state", nextProps.currentProject);
-    const { issueComments, issues, repoName, repoOwner } = nextProps;
-    // console.log('new issues coming in on next props to check for new assignees', issues);
-    // this.setState({ issueComments });
-    // console.log('State Prios in Card itself need to see if this is being modified', this.state.issues);
-    // console.log('AM I geting the new issue Array', issues);
-    // console.log('Here are next props in Issue card', repoName, repoOwner);
+      console.log('what are my next props', nextProps);
+    const { issueComments, issues } = nextProps;
     const commentsLength = Object.keys(issueComments).length;
     const issuesLength = issues.length;
     if (this.state.issues !== null) {
-      if (this.props.issues.length !== issues.length) {
-        this.setState({ issuesLoaded: false });
+        const currentState = this.state;
+        if (this.props.issues.length !== issues.length) {
+            const haveIssues = !issues ? false : true;
+        // this.setState({ ...currentState, issuesLoaded: false });
         const assigneeData = this.props.issues.map((issue) => issue.assignees);
-        // console.log('SETTING ISSUES STATE AS WE READ', this.state.issuesLoaded);
-        this.setState({ issues, issuesLoaded: true, assigneeData, assigneesLoaded: true });
+        this.setState({ ...currentState, issues, issuesLoaded: true, assigneeData, assigneesLoaded: true, noIssues: haveIssues });
         issues.map((issue) => {
           this.props.fetchUserComments(this.props.repoOwner, this.props.repoName, issue.number, this.props.git_token);
         });
-        // console.log('Now this is state again and should be modified thus causing a re render', this.state.issues, this.state.issuesLoaded);
       }
     }
     if (commentsLength === issuesLength) {
-      // console.log('Issues in Issue Card from next props', issues);
-      // console.log('SETTING ISSUES STATE AS WE READ', this.state.issuesLoaded);
       const assigneeData = this.props.issues.map((issue) => issue.assignees);
-      this.setState({ issueComments, issues, commentsLoaded: true, issuesLoaded: true, assigneeData, assigneesLoaded: true });
-      // console.log('Now this is state again and should be modified thus causing a re render', this.state.issues, this.state.issuesLoaded);
+        const haveIssues = issues.length === 0;
+        this.setState({ issueComments, issues, commentsLoaded: true, issuesLoaded: true, assigneeData, assigneesLoaded: true, noIssues: haveIssues });
     }
     if (this.state.issueComments !== null) {
       if (issueComments.length !== this.state.issueComments.length) {
-        // console.log('do these comments reset?????');
-        this.setState({ issueComments });
+        const currentState = this.state;
+        this.setState({ ...currentState, issueComments });
       }
     }
   }
 handleModalStateChange = (state) => {
-  this.setState({ currentModalState: state });
-}
+    const currentState = this.state;
+  this.setState({ ...currentState, currentModalState: state });
+};
 modifyTextState = (event) => {
-  this.setState({ newCommentText: event.target.value });
-}
+  const currentState = this.state;
+  this.setState({ ...currentState, newCommentText: event.target.value });
+};
 handleAddNewComment = () => {
   const { currentIssue } = this.state;
   this.props.addUserComment(this.props.repoOwner, this.props.repoName, currentIssue, this.state.newCommentText, this.props.git_token);
-  this.setState({ newCommentText: '' });
+  const currentState = this.state;
+  this.setState({ ...currentState, newCommentText: '' });
   this.handleClose();
+};
+handleClick = (currentIssue) => {
+  const currentState = this.state;
+  this.setState({ ...currentState, isShowingModal: true, currentIssue });
 }
-handleClick = (currentIssue) => this.setState({ isShowingModal: true, currentIssue })
-handleClose = () => this.setState({ isShowingModal: false })
+handleClose = () => {
+  const currentState = this.state;
+  this.setState({ ...currentState, isShowingModal: false });
+}
 handleCloseIssue = (login, repoName, issueNum, token) => {
-// console.log('PASSING TO CLOSE ISSUE', login, repoName, issueNum, token);
   this.props.closeUserIssue(login, repoName, issueNum, token);
-}
-shouldComponentUpdate(nextProps, nextState) {
-  return true;
-}
-// this function handles adding new assignees, closing the modal, and refreshing the page
+};
 handleAddAssignees = (assignees) => {
-  this.setState({ assigneesLoaded: false });
+  const currentState = this.state;
+  this.setState({ ...currentState, assigneesLoaded: false });
   this.props.addNewAssignees(this.props.repoOwner, this.props.repoName, this.props.currentIssueNumber, assignees, this.props.git_token);
   this.props.handleIssuePullClose();
-  setTimeout(this.props.handleRefresh(), 2000);
-}
+};
 handleRemoveAssignees = (assignees) => {
-  this.setState({ assigneesLoaded: false });
+    const currentState = this.state;
+    this.setState({ ...currentState, assigneesLoaded: false });
   this.props.removeNewAssignees(this.props.repoOwner, this.props.repoName, this.props.currentIssueNumber, assignees, this.props.git_token);
   this.props.handleIssuePullClose();
-  setTimeout(this.props.handleRefresh(), 2000);
+};
+componentWillUnmount() {
+    console.log('i just unmounted');
 }
 render() {
-  // console.log('STATE of issues at render', this.state.issues);
-  // console.log('issue card mocal state', this.props.modalState);
-  // console.log('Expanded card State', this.state.expandedCards);
+  console.log('here is my card State', this.state);
   const { issuesLoaded, commentsLoaded, assigneesLoaded } = this.state;
-  console.log('Card state issues!!!!!!!!!!!!!!!!!!!!', this.state.issues);
-  // console.log('Here are the expanded cards', this.state.expandedCards);
-  // console.log('Here aremy issue comments', this.state.issueComments);
-  if (issuesLoaded && commentsLoaded && assigneesLoaded) {
-    const { issues, issueComments, isShowingModal } = this.state;
+  if (issuesLoaded && commentsLoaded && assigneesLoaded && this.state.issues.length) {
+    const { issues, issueComments } = this.state;
     return (
-      // <div className={styles.mainCont}>
       <div className={`card-group ${styles.mainCont}`}>
         {issues.map((issue, i) => (
           <div className="col-sm-6" key={issue.id}>
@@ -167,18 +169,23 @@ render() {
       </div>
     );
   }
-  return (
-    <div>
-      <div className={styles.loaderContainerThree}>
-        <img className={`center-block ${styles.loaderImageThree}`} src="./images/uTile_black_loader_100.gif" alt="loader" />
-        {setTimeout(()=>{
-          return (
-          <h1 className={styles.loaderTextThree} style={{ color: 'white' }}>It does not looks like there are any issues currently.</h1>
-        );
-        }, 5000)}
-      </div>
-    </div>
-  );
+  else if (this.state.noIssues && issuesLoaded && commentsLoaded && assigneesLoaded) {
+      return (
+          <div>
+              <h1 style={{textAlign: 'center', marginTop: '5%'}}>There are currently no Issues</h1>
+          </div>
+      );
+  }
+  else {
+      return (
+          <div className={styles.loaderContainerThree}>
+              <img className={`center-block ${styles.loaderImageThree}`} src="./images/uTile_black_loader_100.gif"
+                   alt="loader"/>
+          </div>
+      );
+
+
+  }
 }
 }
 

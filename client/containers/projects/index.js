@@ -39,7 +39,7 @@ class Projects extends Component {
       const { currentProject } = this.state;
       if (currentProject !== null) {
         return (
-          <div style={{backgroundColor: 'white'}}>
+          <div>
             <div className={styles.collab}>
               <h2>Current Repository: {currentProject.name}</h2>
 
