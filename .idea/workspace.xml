@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9fa5b9fc-f272-4aa2-82d4-8aa245d98f46" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/--syslog" afterPath="$PROJECT_DIR$/--syslog" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/client/components/Card/index.js" afterPath="$PROJECT_DIR$/client/components/Card/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/components/Card/issueCards.css" afterPath="$PROJECT_DIR$/client/components/Card/issueCards.css" />
       <change beforePath="$PROJECT_DIR$/client/components/EventFeed/card_styles.css" afterPath="$PROJECT_DIR$/client/components/EventFeed/card_styles.css" />
-      <change beforePath="$PROJECT_DIR$/client/components/EventFeed/index.js" afterPath="$PROJECT_DIR$/client/components/EventFeed/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/containers/dashboard/index.js" afterPath="$PROJECT_DIR$/client/containers/dashboard/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/containers/projects/Layout.js" afterPath="$PROJECT_DIR$/client/containers/projects/Layout.js" />
-      <change beforePath="$PROJECT_DIR$/client/containers/projects/index.js" afterPath="$PROJECT_DIR$/client/containers/projects/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/containers/projects/project_style.css" afterPath="$PROJECT_DIR$/client/containers/projects/project_style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,7 +16,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/components/EventFeed/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="31" column="35" lean-forward="false" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="card_styles.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/components/EventFeed/card_styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="524">
+              <caret line="71" column="12" lean-forward="false" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -71,7 +84,6 @@
         <option value="$PROJECT_DIR$/client/containers/signup/index.js" />
         <option value="$PROJECT_DIR$/client/components/LoginForm/LoginForm.css" />
         <option value="$PROJECT_DIR$/client/containers/login/index.js" />
-        <option value="$PROJECT_DIR$/client/components/EventFeed/card_styles.css" />
         <option value="$PROJECT_DIR$/client/containers/projects/index.js" />
         <option value="$PROJECT_DIR$/client/components/EventFeed/index.js" />
         <option value="$PROJECT_DIR$/client/containers/projects/Layout.js" />
@@ -79,6 +91,7 @@
         <option value="$PROJECT_DIR$/client/containers/projects/project_style.css" />
         <option value="$PROJECT_DIR$/client/components/Card/index.js" />
         <option value="$PROJECT_DIR$/client/components/Card/issueCards.css" />
+        <option value="$PROJECT_DIR$/client/components/EventFeed/card_styles.css" />
       </list>
     </option>
   </component>
@@ -141,7 +154,7 @@
               <item name="Project_3" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Card" type="462c0819:PsiDirectoryNode" />
+              <item name="EventFeed" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Project_3" type="b2602c69:ProjectViewProjectNode" />
@@ -191,17 +204,18 @@
       <workItem from="1524931488277" duration="934000" />
       <workItem from="1525056453229" duration="51000" />
       <workItem from="1525056509211" duration="21040000" />
-      <workItem from="1525381125861" duration="5647000" />
+      <workItem from="1525381125861" duration="5845000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27672000" />
+    <option name="totallyTimeSpent" value="27870000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1348" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19658753" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19658753" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -506,20 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/EventFeed/card_styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/EventFeed/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="31" column="35" lean-forward="false" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/containers/projects/project_style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -548,7 +548,7 @@
         <state relative-caret-position="694">
           <caret line="181" column="69" lean-forward="false" selection-start-line="181" selection-start-column="53" selection-end-line="181" selection-end-column="69" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -573,6 +573,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="545">
           <caret line="55" column="12" lean-forward="false" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/EventFeed/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="31" column="35" lean-forward="false" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/EventFeed/card_styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="71" column="12" lean-forward="false" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
           <folding />
         </state>
       </provider>
