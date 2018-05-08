@@ -1,6 +1,6 @@
 import express from 'express';
 import request from 'request';
-
+const fs = require('fs');
 
 const githubRouter = express.Router();
 githubRouter.post('/user_profile', (req, res) => {
@@ -309,6 +309,18 @@ githubRouter.post('/readme', (req, res) => {
   });
   // // We will need to send to the component
   // res.send(buf.toString());
+});
+
+// Save Code Editor File
+githubRouter.post('/save', (req, res) => {
+  fs.writeFileSync(`${req.body.path}`, req.body.code, 'utf8', (err) => {
+    if (err) {
+      console.error(err);
+      res.sendStatus(345).json({fileStatus: 'unsaved', error: err });
+    }
+    console.log('file saved');
+    res.sendStatus(200).json({fileStatus: 'saved'});
+  });
 });
 
 export default githubRouter;
