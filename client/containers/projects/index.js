@@ -15,7 +15,8 @@ class Projects extends Component {
       currentScreen: 'readmeButt',
     };
     componentWillMount() {
-      this.setState({ currentProject: this.props.currentProject });
+        const currentState = this.state;
+      this.setState({ ...currentState, currentProject: this.props.currentProject });
 
     }
     componentDidMount() {
@@ -24,21 +25,23 @@ class Projects extends Component {
     }
     componentWillReceiveProps(nextProps) {
       const { currentProject } = nextProps;
-      if (currentProject.id !== this.props.currentProject.id) {
-        this.setState({ currentProject });
+      if (currentProject.id !== this.props.currentProject.id || currentProject.fork !== this.props.currentProject.fork) {
+          const currentState = this.state;
+        this.setState({ ...currentState, currentProject });
       }
-    }
-    whatStateToChange(prop) {
-      this.setState({ currentScreen: prop });
     }
     shouldComponentUpdate(nextProps, nextState) {
-      if (nextState.currentProject !== this.state.currentProject) {
-        return true;
-      }
-      if (nextState.currentScreen !== this.state.currentScreen) {
-        return true;
-      }
-      return false;
+        if (nextState.currentProject !== this.state.currentProject) {
+            return true;
+        }
+        if (nextState.currentScreen !== this.state.currentScreen) {
+            return true;
+        }
+        return false;
+    }
+    whatStateToChange(prop) {
+        const currentState = this.state;
+      this.setState({ ...currentState, currentScreen: prop });
     }
     doWeHaveAForkedRepo() {
         if(this.state.currentProject.fork){
@@ -63,7 +66,7 @@ class Projects extends Component {
               <h2>Current Repository: {currentProject.name} {this.doWeHaveAForkedRepo()}</h2>
 
             </div>
-              <CollaboratorsBar repoName={currentProject.name} currentUser={currentProject.owner.login} />
+              <CollaboratorsBar fork={this.state.currentProject.fork} repoName={currentProject.name} currentUser={currentProject.owner.login} />
             <div className={styles.buttonBox}>
               <ButtonBar fork={this.state.currentProject.fork} currentScreen={this.state.currentScreen} clicker={this.whatStateToChange.bind(this)} />
             </div>

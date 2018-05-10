@@ -19,14 +19,14 @@ class Collaborators extends Component {
     this.props.fetchCollaborators(this.props.currentUser, this.props.repoName, this.props.git_token);
   }
   componentWillReceiveProps(nextProps) {
-    const { collabs, repoName, currentUser } = nextProps;
+    const { collabs, repoName, currentUser, fork } = nextProps;
 
     if (collabs.length !== 0) {
       const currentState = this.state;
       this.setState({ ...currentState, collabs, repoName, currentUser });
     }
     if (repoName) {
-        if (repoName !== this.props.repoName) {
+        if (repoName !== this.props.repoName || fork !== this.props.fork) {
         this.props.fetchCollaborators(currentUser, repoName, this.props.git_token);
       }
     }
