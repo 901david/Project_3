@@ -29,7 +29,7 @@ class IssueCard extends Component {
 
   componentDidMount() {
       this.props.handleRefresh();
-      if(!this.state.issues) {
+      if(!this.props.issues) {
       const currentState = this.state;
       this.setState({ ...currentState, issuesLoaded: true, commentsLoaded: true, assigneesLoaded: true, noIssues: true });
     }
@@ -111,7 +111,7 @@ componentWillUnmount() {
 }
 
 render() {
-  console.log('here is my card State', this.state);
+  console.log('here is my card props', this.props);
   const { issuesLoaded, commentsLoaded, assigneesLoaded } = this.state;
   if (issuesLoaded && commentsLoaded && assigneesLoaded && !this.state.noIssues) {
     const { issues, issueComments } = this.state;

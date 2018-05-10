@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9fa5b9fc-f272-4aa2-82d4-8aa245d98f46" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/--syslog" beforeDir="false" afterPath="$PROJECT_DIR$/--syslog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/Card/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/Card/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/components/Collaborators/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/Collaborators/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/containers/projects/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/containers/projects/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/containers/projects/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/containers/projects/Layout.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,10 +20,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/components/Card/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Button_Bar.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/components/ButtonBar/Button_Bar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/containers/projects/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
+            <state relative-caret-position="448">
               <caret line="68" column="69" selection-start-line="68" selection-start-column="69" selection-end-line="68" selection-end-column="69" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -30,14 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/components/Collaborators/index.js">
+      <file leaf-file-name="Layout.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/containers/projects/Layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="28" column="72" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1638">
+              <caret line="149" column="44" selection-start-line="149" selection-start-column="44" selection-end-line="149" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -88,7 +108,6 @@
         <option value="$PROJECT_DIR$/client/components/LoginForm/LoginForm.css" />
         <option value="$PROJECT_DIR$/client/containers/login/index.js" />
         <option value="$PROJECT_DIR$/client/components/EventFeed/index.js" />
-        <option value="$PROJECT_DIR$/client/containers/projects/Layout.js" />
         <option value="$PROJECT_DIR$/client/containers/dashboard/index.js" />
         <option value="$PROJECT_DIR$/client/components/Card/issueCards.css" />
         <option value="$PROJECT_DIR$/client/components/EventFeed/card_styles.css" />
@@ -100,7 +119,6 @@
         <option value="$PROJECT_DIR$/server/src/api/github.js" />
         <option value="$PROJECT_DIR$/client/components/CodeEditor/Code_Editor.js" />
         <option value="$PROJECT_DIR$/client/components/CodeEditor/code_editor.css" />
-        <option value="$PROJECT_DIR$/client/components/Card/index.js" />
         <option value="$PROJECT_DIR$/client/containers/projects/project_style.css" />
         <option value="$PROJECT_DIR$/client/components/NavBar/NavBar.css" />
         <option value="$PROJECT_DIR$/client/components/NavBar/Drawer.js" />
@@ -109,6 +127,8 @@
         <option value="$PROJECT_DIR$/client/components/Collaborators/collab.css" />
         <option value="$PROJECT_DIR$/client/containers/projects/index.js" />
         <option value="$PROJECT_DIR$/client/components/Collaborators/index.js" />
+        <option value="$PROJECT_DIR$/client/containers/projects/Layout.js" />
+        <option value="$PROJECT_DIR$/client/components/Card/index.js" />
       </list>
     </option>
   </component>
@@ -174,14 +194,7 @@
               <item name="Project_3" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Collaborators" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project_3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project_3" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="NavBar" type="462c0819:PsiDirectoryNode" />
+              <item name="Card" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Project_3" type="b2602c69:ProjectViewProjectNode" />
@@ -195,17 +208,6 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
               <item name="projects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project_3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project_3" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project_3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project_3" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Project_3" type="b2602c69:ProjectViewProjectNode" />
@@ -270,12 +272,12 @@
       <workItem from="1525740250730" duration="1097000" />
       <workItem from="1525741598234" duration="3505000" />
       <workItem from="1525745579031" duration="2436000" />
-      <workItem from="1525808679121" duration="6355000" />
+      <workItem from="1525808679121" duration="7758000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47789000" />
+    <option name="totallyTimeSpent" value="49192000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1251" height="1050" extended-state="0" />
@@ -533,16 +535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/Card/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="122" column="42" selection-start-line="122" selection-start-column="42" selection-end-line="122" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/components/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -607,23 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/containers/projects/Layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="929">
-          <caret line="95" column="33" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/ButtonBar/Button_Bar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/components/Collaborators/collab.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -641,9 +616,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/Collaborators/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/ButtonBar/Button_Bar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/containers/projects/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
+        <state relative-caret-position="448">
           <caret line="68" column="69" selection-start-line="68" selection-start-column="69" selection-end-line="68" selection-end-column="69" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -651,10 +643,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/Collaborators/index.js">
+    <entry file="file://$PROJECT_DIR$/client/containers/projects/Layout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="28" column="72" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
+        <state relative-caret-position="1638">
+          <caret line="149" column="44" selection-start-line="149" selection-start-column="44" selection-end-line="149" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/Card/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

@@ -28,12 +28,15 @@ class ProjLayout extends Component {
   }
   componentDidMount() {
     this.props.fetchUserReadme(this.props.currentRepoOwner, this.props.repoName, this.props.git_token);
-    this.props.fetchUserIssues(this.props.currentRepoOwner, this.props.repoName, this.props.git_token);
+      this.props.fetchUserIssues(this.props.currentRepoOwner, this.props.repoName, this.props.git_token);
   }
   componentWillReceiveProps(nextProps) {
-    const { userIssues, readme, repoName, git_profile, currentRepoOwner, modifiedIssue } = nextProps;
-    if (this.props.issues !== userIssues) {
-      this.setState({ issues: userIssues });
+    const { userIssues, readme, repoName, currentRepoOwner } = nextProps;
+    console.log('next props',nextProps);
+
+    if (this.state.issues !== userIssues) {
+      const currentState = this.state;
+      this.setState({ ...currentState, issues: userIssues });
     }
     if (currentRepoOwner !== null || currentRepoOwner !== this.state.currentRepoOwner) {
       this.setState({ currentRepoOwner });
@@ -48,7 +51,7 @@ class ProjLayout extends Component {
       this.setState({ readme, repoName });
     }
     if (userIssues !== null) {
-      this.setState({ issues: userIssues, readme });
+        this.setState({ issues: userIssues, readme });
     }
   }
   handleModalShowState = (state, issueNum) => {
@@ -144,6 +147,7 @@ class ProjLayout extends Component {
     }
   }
   render() {
+    console.log('layout state', this.state);
     return (
       <div className={styles.layout}>
         {this.whatStateToUse(this.props.currentScreen)}
