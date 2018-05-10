@@ -14,8 +14,13 @@ class Projects extends Component {
       currentProject: null,
       currentScreen: 'readmeButt',
     };
-    componentDidMount() {
+    componentWillMount() {
       this.setState({ currentProject: this.props.currentProject });
+
+    }
+    componentDidMount() {
+        console.log('Here is what a current project looks like', this.state.currentProject);
+
     }
     componentWillReceiveProps(nextProps) {
       const { currentProject } = nextProps;
@@ -35,18 +40,32 @@ class Projects extends Component {
       }
       return false;
     }
+    doWeHaveAForkedRepo() {
+        if(this.state.currentProject.fork){
+            return (
+
+              <img style={{maxHeight: '50px'}} src='images/fork.png' alt='forked' />
+
+            );
+        }
+        else {
+            return (
+              <p></p>
+            );
+        }
+    }
     render() {
       const { currentProject } = this.state;
       if (currentProject !== null) {
         return (
           <div>
             <div className={styles.collab}>
-              <h2>Current Repository: {currentProject.name}</h2>
+              <h2>Current Repository: {currentProject.name} {this.doWeHaveAForkedRepo()}</h2>
 
             </div>
               <CollaboratorsBar repoName={currentProject.name} currentUser={currentProject.owner.login} />
             <div className={styles.buttonBox}>
-              <ButtonBar currentScreen={this.state.currentScreen} clicker={this.whatStateToChange.bind(this)} />
+              <ButtonBar fork={this.state.currentProject.fork} currentScreen={this.state.currentScreen} clicker={this.whatStateToChange.bind(this)} />
             </div>
             <div>
               <ProjLayout currentScreen={this.state.currentScreen}  repoName={currentProject.name} currentRepoOwner={currentProject.owner.login} />

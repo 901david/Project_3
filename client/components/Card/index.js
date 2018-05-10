@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import { connect } from 'react-redux';
 import styles from './issueCards.css';
 import { closeUserIssue } from '../../actions/githubActions/closeIssueAction';
@@ -40,7 +41,6 @@ class IssueCard extends Component {
 
   }
   componentWillReceiveProps(nextProps) {
-      console.log('what are my next props', nextProps);
     const { issueComments, issues } = nextProps;
     const commentsLength = Object.keys(issueComments).length;
     const issuesLength = issues.length;
@@ -109,17 +109,19 @@ handleRemoveAssignees = (assignees) => {
 componentWillUnmount() {
     console.log('i just unmounted');
 }
+
 render() {
   console.log('here is my card State', this.state);
   const { issuesLoaded, commentsLoaded, assigneesLoaded } = this.state;
-  if (issuesLoaded && commentsLoaded && assigneesLoaded && this.state.issues.length) {
+  if (issuesLoaded && commentsLoaded && assigneesLoaded && !this.state.noIssues) {
     const { issues, issueComments } = this.state;
     return (
       <div className={`card-group ${styles.mainCont}`}>
         {issues.map((issue, i) => (
           <div className="col-sm-6" key={issue.id}>
             <div className={`card ${styles.boxShad}`}>
-              <div className="card-header" data-toggle="collapse" href={`#collapse${issue.number}`} >{`${issue.title} -  ${issue.pull_request ? 'Pull Request' : 'Issue'} #${issue.number}`}</div>
+              <div className="card-header" data-toggle="collapse" href={`#collapse${issue.number}`} >{`${issue.title} -  ${issue.pull_request ? 'Pull Request' : 'Issue'} #${issue.number}`}
+              </div>
               <div id={`collapse${issue.number}`} className={`card-block collapse`}>
                 <img className={`${styles.avatarFix} pull-left`} src={issue.user.avatar_url} alt="user" />
                 <h6 className={`card-title pull-left ${styles.titleBump}`}>{`Opened By ${issue.user.login}`}</h6>

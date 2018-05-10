@@ -4,7 +4,6 @@ import Chip from './Collab_Chip';
 import styles from './collab.css';
 import { fetchCollaborators } from '../../actions/githubActions/getCollabAction';
 
-const token = 'b38b9935f766385b9d73a1e7fa964120c2bb4d9b';
 
 
 class Collaborators extends Component {
@@ -21,11 +20,13 @@ class Collaborators extends Component {
   }
   componentWillReceiveProps(nextProps) {
     const { collabs, repoName, currentUser } = nextProps;
+
     if (collabs.length !== 0) {
-      this.setState({ collabs, repoName, currentUser });
+      const currentState = this.state;
+      this.setState({ ...currentState, collabs, repoName, currentUser });
     }
     if (repoName) {
-      if (repoName !== this.props.repoName) {
+        if (repoName !== this.props.repoName) {
         this.props.fetchCollaborators(currentUser, repoName, this.props.git_token);
       }
     }

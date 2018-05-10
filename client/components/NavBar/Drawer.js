@@ -53,8 +53,21 @@ class RepoDrawer extends Component {
     this.props.fetchUserRepos(this.props.git_profile.login, this.props.git_token, pageNumber);
     this.setState({ currentRepo: pageNumber.toString() });
   }
+  doWeHaveAForkedRepo(forkBool) {
+        if(forkBool){
+            return (
+
+                <img style={{maxHeight: '30px', position:'absolute', right:'8%', marginTop: '3%'}} src='images/fork.png' alt='forked' />
+
+            );
+        }
+        else {
+            return (
+                <p></p>
+            );
+        }
+    }
   render() {
-    // console.log('current repo number', this.state.currentRepo);
 
     const { repos } = this.state;
     const backArrow = () => (
@@ -90,15 +103,16 @@ class RepoDrawer extends Component {
             />
           </div>
           {repos.map((repo) => (
-            <div key={repo.id}>
+            <div className={styles.buttonContainer} key={repo.id}>
               <Button
                 className={styles.button}
-                label={repo.name}
+                label={`${repo.name}`}
                 raised
                 ripple
                 primary
                 onClick={() => this.handleProjectClick(repo.id)}
               />
+                {this.doWeHaveAForkedRepo(repo.fork)}
             </div>
           ))}
         </Drawer>

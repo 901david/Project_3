@@ -1,0 +1,16 @@
+2018-05-08T13:42:47.780-0600 I CONTROL  [initandlisten] MongoDB starting : pid=14828 port=27017 dbpath=/data/db 64-bit host=Davids-MBP.denver.agren.com
+2018-05-08T13:42:47.780-0600 I CONTROL  [initandlisten] db version v3.4.9
+2018-05-08T13:42:47.780-0600 I CONTROL  [initandlisten] git version: 876ebee8c7dd0e2d992f36a848ff4dc50ee6603e
+2018-05-08T13:42:47.780-0600 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2018-05-08T13:42:47.780-0600 I CONTROL  [initandlisten] allocator: system
+2018-05-08T13:42:47.780-0600 I CONTROL  [initandlisten] modules: none
+2018-05-08T13:42:47.780-0600 I CONTROL  [initandlisten] build environment:
+2018-05-08T13:42:47.780-0600 I CONTROL  [initandlisten]     distarch: x86_64
+2018-05-08T13:42:47.780-0600 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-05-08T13:42:47.780-0600 I CONTROL  [initandlisten] options: { processManagement: { fork: true }, systemLog: { destination: "file", path: "--syslog", verbosity: 1 } }
+2018-05-08T13:42:47.780-0600 D -        [initandlisten] User Assertion: 98:Unable to lock file: /data/db/mongod.lock Resource temporarily unavailable. Is a mongod instance already running? src/mongo/db/service_context_d.cpp 98
+2018-05-08T13:42:47.783-0600 I STORAGE  [initandlisten] exception in initAndListen: 98 Unable to lock file: /data/db/mongod.lock Resource temporarily unavailable. Is a mongod instance already running?, terminating
+2018-05-08T13:42:47.783-0600 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2018-05-08T13:42:47.783-0600 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2018-05-08T13:42:47.784-0600 I CONTROL  [initandlisten] now exiting
+2018-05-08T13:42:47.784-0600 I CONTROL  [initandlisten] shutting down with code:100
