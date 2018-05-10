@@ -305,7 +305,7 @@ githubRouter.post('/readme', (req, res) => {
       const readme = buf.toString();
       return res.status(200).json({ readme: readme, err: null });
     }
-    res.status(500).json({ err, issues: null });
+    res.status(500).json({ err, readme: null });
   });
   // // We will need to send to the component
   // res.send(buf.toString());

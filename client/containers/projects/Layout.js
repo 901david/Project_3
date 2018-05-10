@@ -28,12 +28,10 @@ class ProjLayout extends Component {
   }
   componentDidMount() {
     this.props.fetchUserReadme(this.props.currentRepoOwner, this.props.repoName, this.props.git_token);
-      this.props.fetchUserIssues(this.props.currentRepoOwner, this.props.repoName, this.props.git_token);
+    this.props.fetchUserIssues(this.props.currentRepoOwner, this.props.repoName, this.props.git_token);
   }
   componentWillReceiveProps(nextProps) {
     const { userIssues, readme, repoName, currentRepoOwner } = nextProps;
-    console.log('next props',nextProps);
-
     if (this.state.issues !== userIssues) {
       const currentState = this.state;
       this.setState({ ...currentState, issues: userIssues });
@@ -51,7 +49,7 @@ class ProjLayout extends Component {
       this.setState({ readme, repoName });
     }
     if (userIssues !== null) {
-        this.setState({ issues: userIssues, readme });
+      this.setState({ issues: userIssues, readme });
     }
   }
   handleModalShowState = (state, issueNum) => {
@@ -80,11 +78,15 @@ class ProjLayout extends Component {
             <ReadMe
               repoName={this.state.repoName}
               userName={this.state.currentRepoOwner}
-              readme={this.state.readme === null ? '' : this.state.readme}
+              readme={this.state.readme === null ? 'Unfortunately, there is currently no read me created.  Get started by creating one on GitHub' : this.state.readme}
             />
           </div>
         );
       case 'issuesButt':
+        if (this.props.fork) {
+          return this.whatStateToUse('readmeButt');
+        }
+
         return (
           <div>
             <div className={styles.issueButtons}>
@@ -98,7 +100,11 @@ class ProjLayout extends Component {
 
               </MuiThemeProvider>
               <MuiThemeProvider>
-                <Card className={styles.buttonPos} style={{ width: 350, cursor: 'pointer' }} onClick={this.handleRefresh}>
+                <Card
+                  className={styles.buttonPos}
+                  style={{ width: 350, cursor: 'pointer' }}
+                  onClick={this.handleRefresh}
+                >
                   <CardActions>
                     <FlatButton label="Refresh" onClick={this.handleRefresh} />
                   </CardActions>
@@ -126,6 +132,7 @@ class ProjLayout extends Component {
             </div>
           </div>
         );
+
       case 'matrixButt':
         return (
           <div>
@@ -147,7 +154,6 @@ class ProjLayout extends Component {
     }
   }
   render() {
-    console.log('layout state', this.state);
     return (
       <div className={styles.layout}>
         {this.whatStateToUse(this.props.currentScreen)}

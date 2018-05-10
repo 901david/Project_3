@@ -71,7 +71,7 @@ class Projects extends Component {
               <ButtonBar fork={this.state.currentProject.fork} currentScreen={this.state.currentScreen} clicker={this.whatStateToChange.bind(this)} />
             </div>
             <div>
-              <ProjLayout currentScreen={this.state.currentScreen}  repoName={currentProject.name} currentRepoOwner={currentProject.owner.login} />
+              <ProjLayout fork={this.state.currentProject.fork} currentScreen={this.state.currentScreen}  repoName={currentProject.name} currentRepoOwner={currentProject.owner.login} />
             </div>
           </div>
         );
