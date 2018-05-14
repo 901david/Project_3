@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import { connect } from 'react-redux';
 import styles from './issueCards.css';
 import { closeUserIssue } from '../../actions/githubActions/closeIssueAction';
@@ -24,42 +23,41 @@ class IssueCard extends Component {
     currentIssueNumber: '',
     currentModalState: '',
     assigneeData: null,
-      noIssues: false,
+    noIssues: false,
   };
 
   componentDidMount() {
-      this.props.handleRefresh();
-      if(!this.props.issues) {
+    this.props.handleRefresh();
+    if (!this.props.issues) {
       const currentState = this.state;
       this.setState({ ...currentState, issuesLoaded: true, commentsLoaded: true, assigneesLoaded: true, noIssues: true });
+    } else {
+      this.props.issues.map((issue) => {
+        this.props.fetchUserComments(this.props.repoOwner, this.props.repoName, issue.number, this.props.git_token);
+      });
     }
-    else {
-        this.props.issues.map((issue) => {
-            this.props.fetchUserComments(this.props.repoOwner, this.props.repoName, issue.number, this.props.git_token);
-        });
-    }
-
   }
   componentWillReceiveProps(nextProps) {
-    const { issueComments, issues } = nextProps;
+    const { issueComments, issues, assigneeData } = nextProps;
+    console.log('Check these next props out', nextProps);
     const commentsLength = Object.keys(issueComments).length;
     const issuesLength = issues.length;
+    if (assigneeData) {
+      this.setState({ assigneeData, assigneesLoaded: true })
+    }
     if (this.state.issues !== null) {
-        const currentState = this.state;
-        if (this.props.issues.length !== issues.length) {
-            const haveIssues = !issues ? false : true;
-        // this.setState({ ...currentState, issuesLoaded: false });
-        const assigneeData = this.props.issues.map((issue) => issue.assignees);
-        this.setState({ ...currentState, issues, issuesLoaded: true, assigneeData, assigneesLoaded: true, noIssues: haveIssues });
+      if (this.props.issues.length !== issues.length) {
+        const haveIssues = !issues ? false : true;;
+        this.setState({ issues, issuesLoaded: true, assigneesLoaded: true, noIssues: haveIssues });
         issues.map((issue) => {
           this.props.fetchUserComments(this.props.repoOwner, this.props.repoName, issue.number, this.props.git_token);
         });
       }
+
     }
     if (commentsLength === issuesLength) {
-      const assigneeData = this.props.issues.map((issue) => issue.assignees);
-        const haveIssues = issues.length === 0;
-        this.setState({ issueComments, issues, commentsLoaded: true, issuesLoaded: true, assigneeData, assigneesLoaded: true, noIssues: haveIssues });
+      const haveIssues = issues.length === 0;
+      this.setState({ issueComments, issues, commentsLoaded: true, issuesLoaded: true, noIssues: haveIssues });
     }
     if (this.state.issueComments !== null) {
       if (issueComments.length !== this.state.issueComments.length) {
@@ -68,8 +66,9 @@ class IssueCard extends Component {
       }
     }
   }
+
 handleModalStateChange = (state) => {
-    const currentState = this.state;
+  const currentState = this.state;
   this.setState({ ...currentState, currentModalState: state });
 };
 modifyTextState = (event) => {
@@ -101,17 +100,14 @@ handleAddAssignees = (assignees) => {
   this.props.handleIssuePullClose();
 };
 handleRemoveAssignees = (assignees) => {
-    const currentState = this.state;
-    this.setState({ ...currentState, assigneesLoaded: false });
+  const currentState = this.state;
+  this.setState({ ...currentState, assigneesLoaded: false });
   this.props.removeNewAssignees(this.props.repoOwner, this.props.repoName, this.props.currentIssueNumber, assignees, this.props.git_token);
   this.props.handleIssuePullClose();
 };
-componentWillUnmount() {
-    console.log('i just unmounted');
-}
 
 render() {
-  console.log('here is my card props', this.props);
+  console.log('here is my card state', this.state);
   const { issuesLoaded, commentsLoaded, assigneesLoaded } = this.state;
   if (issuesLoaded && commentsLoaded && assigneesLoaded && !this.state.noIssues) {
     const { issues, issueComments } = this.state;
@@ -142,7 +138,7 @@ render() {
                 </div>
                 <h5 style={{ marginTop: 5 }}>Current Assignees:</h5>
                 <div className={styles.mainContAss} >
-                  { this.state.assigneeData[i].map((assignee) => (
+                  { this.state.issues[i].assignees.map((assignee) => (
                     <div key={assignee.id}>
                       <img className={`${styles.avatarFix} pull-left`} src={assignee.avatar_url} alt="user" />
                     </div>
@@ -170,24 +166,23 @@ render() {
 
       </div>
     );
+  } else if (this.state.noIssues && issuesLoaded && commentsLoaded && assigneesLoaded) {
+    return (
+      <div>
+        <h1 style={{ textAlign: 'center', marginTop: '5%' }}>There are currently no Issues</h1>
+      </div>
+    );
   }
-  else if (this.state.noIssues && issuesLoaded && commentsLoaded && assigneesLoaded) {
-      return (
-          <div>
-              <h1 style={{textAlign: 'center', marginTop: '5%'}}>There are currently no Issues</h1>
-          </div>
-      );
-  }
-  else {
-      return (
-          <div className={styles.loaderContainerThree}>
-              <img className={`center-block ${styles.loaderImageThree}`} src="./images/uTile_black_loader_100.gif"
-                   alt="loader"/>
-          </div>
-      );
 
-
-  }
+  return (
+    <div className={styles.loaderContainerThree}>
+      <img
+        className={`center-block ${styles.loaderImageThree}`}
+        src="./images/uTile_black_loader_100.gif"
+        alt="loader"
+      />
+    </div>
+  );
 }
 }
 

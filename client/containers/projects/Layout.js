@@ -126,6 +126,7 @@ class ProjLayout extends Component {
                 handleIssuePullClick={this.handleIssuePullClick}
                 handleRefresh={this.handleRefresh}
                 issues={this.state.issues}
+                assigneeData={this.state.issues.map((issue) => issue.assignees) }
                 repoName={this.state.repoName}
                 repoOwner={this.state.currentRepoOwner}
               />
