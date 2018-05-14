@@ -82,10 +82,11 @@ class RepoDrawer extends Component {
     }
     return (
       <div className={specialClass}>
-        <Button className={styles.repoButton} label="Repos" onClick={this.handleToggle} />
+        <Button style={{color: 'white'}} className={styles.repoButton} label="Repos" onClick={this.handleToggle} />
         <Drawer type='right' active={this.state.active} onOverlayClick={this.handleToggle} >
           <div className={styles.pageButtons} style={{marginTop: '25%'}}>
             <Button
+                style={{background: 'darkslateblue'}}
               className={styles.button}
               label="Back"
               raised
@@ -94,7 +95,8 @@ class RepoDrawer extends Component {
               onClick={this.handleRepoBackClick}
             />
             <Button
-              className={styles.button}
+                style={{background: 'darkslateblue'}}
+                className={styles.button}
               label="Forward"
               raised
               ripple
@@ -105,7 +107,8 @@ class RepoDrawer extends Component {
           {repos.map((repo) => (
             <div className={styles.buttonContainer} key={repo.id}>
               <Button
-                className={styles.button}
+                  style={{background: 'darkslateblue'}}
+                  className={styles.button}
                 label={`${repo.name}`}
                 raised
                 ripple
